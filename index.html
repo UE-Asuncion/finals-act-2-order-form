@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>finals - form activity</title>
+    <link href="https://fonts.googleapis.com/css2?family=roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="asuncion_pizzaorderform_csad.css">
+</head>
+<body>
+    <div class="header"> </div>
+    <div class="order-form">
+        <form method="get" action="pages/checkout.html">
+            <div class="caption">
+                <h1>customer information</h1> 
+                <p>please enter your information</p>
+            </div>
+            <div class="input inp-grid">
+                <label for="first-name">first name</label>
+                <label for="last-name">last name</label>
+                <input type="text" id="first-name" placeholder="first name" required>
+                <input type="text" id="last-name" placeholder="last name" required>
+            </div>
+            <div class="input">
+                <label for="email">email</label>
+                <br>
+                <input type="email" id="email" placeholder="email">
+            </div>
+            <div class="input">
+                <label for="telephone">telephone</label>
+                <br>
+                <input type="tel" id="telephone" placeholder="telephone" required>
+            </div>
+            <div class="input">
+                <label for="address">address</label>
+                <br>
+                <input type="text" id="address" placeholder="address" required>
+                <textarea rows="5" cols="50" placeholder=""></textarea>
+            </div>
+            <div class="caption second">
+                <h1>Order</h1> 
+                <p>please enter your order</p>
+            </div>
+            <div class="order-input inp-grid">
+                <div>
+                    <img class="img" src="imgs/burger.png" style="width: 100px; height:auto;">
+                    <div>
+                        <label for="burger-quantity">Quantity</label>
+                        <input style="width:30px; margin-right: 25px;" type="number" name="burger-quantity" id="burger-quantity" value="0" min="0" max="50">
+                    </div>
+                </div>
+                <div class="order-input-content">
+                    <div class="rdio">
+                        <label>Patty</label>
+                        <br>
+                        <input type="radio" id="single-patty" name="patty">
+                        <label for="single-patty">single patty</label>
+                        <br>
+                        <input type="radio" id="double-patty" name="patty">
+                        <label for="double-patty">double patty</label>
+                        <br>
+                    </div>
+                    <div class="rdio">
+                        <label>Add ons</label>
+                        <br>
+                        <div>
+                            <input type="checkbox" id="cheese">
+                            <label for="cheese">Cheese</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="coleslaw">
+                            <label for="coleslaw">Coleslaw</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tomato">
+                            <label for="tomato">Tomato</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="onion">
+                            <label for="onion">Onion</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cucumber">
+                            <label for="cucumber">Cucumber</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="bacon">
+                            <label for="bacon">Bacon</label>
+                        </div>
+                    </div>
+                    <div class="rdio">
+                        <label>Buns</label>
+                        <br>
+                        <input type="radio" id="wheat-bun" name="bun">
+                        <label for="wheat-bun">wheat bun</label>
+                        <br>
+                        <input type="radio" id="honey-oat" name="bun">
+                        <label for="honey-oat">Honey Oat</label>
+                        <br>
+                        <input type="radio" id="sugar-free" name="bun">
+                        <label for="sugar-free">Sugar-free</label>
+                    </div>
+                </div>
+            </div>
+            <div class="caption no-border-top"></div>
+            <div class="order-input inp-grid">
+                <div>
+                    <img class="img" src="imgs/pasta.png" style="width: 100px; height:auto;">
+                    <div>
+                        <label for="pasta-quantity">Quantity</label>
+                        <input style="width:30px; margin-right: 25px;" type="number" name="pasta-quantity" id="pasta-quantity" value="0" min="0" max="50">
+                    </div>
+                </div>
+                <div class="order-input-content">
+                    <div class="rdio">
+                        <label>Sauce</label>
+                        <br>
+                        <input type="radio" id="carbonara" name="pasta-sauce">
+                        <label for="carbonara">Carbonara</label>
+                        <br>
+                        <input type="radio" id="pesto" name="pasta-sauce">
+                        <label for="pesto">Pesto</label>
+                        <br>
+                        <input type="radio" id="spaghetti" name="pasta-sauce">
+                        <label for="spaghetti">Spaghetti</label>
+                    </div>
+                    <div>
+                        <label>Extra</label>
+                        <br>
+                        <input type="checkbox" id="extra-sauce">
+                        <label for="extra-sauce">Extra sauce</label>
+                        <br>
+                        <input type="checkbox" id="extra-cheese">
+                        <label for="extra-cheese">Extra cheese</label>
+                    </div>
+                </div>
+            </div>
+            <div class="caption no-border-top"></div>
+            <div class="order-input inp-grid">
+                <div>
+                    <img class="img" src="imgs/fries.png" style="width: 100px; height:auto;">
+                    <div>
+                        <label for="fries-quantity">Quantity</label>
+                        <input style="width:30px; margin-right: 25px;" type="number" name="fries-quantity" id="fries-quantity" value="0" min="0" max="50">
+                    </div>
+                </div>
+                <div class="order-input-content">
+                    <div class="rdio">
+                        <label>Size</label>
+                        <br>
+                        <input type="radio" id="fries-small" name="fries-size">
+                        <label for="fries-small">Small</label>
+                        <br>
+                        <input type="radio" id="fries-medium" name="fries-size">
+                        <label for="fries-medium">Medium</label>
+                        <br>
+                        <input type="radio" id="fries-large" name="fries-size">
+                        <label for="fries-large">Large</label>
+                    </div>
+                    <div>
+                        <label>Flavor</label>
+                        <!-- bbq, cheese, sour cream -->
+                        <br>
+                        <input type="radio" id="bbq" name="flavor">
+                        <label for="bbq">BBQ</label>
+                        <br>
+                        <input type="radio" id="cheese" name="flavor">
+                        <label for="cheese">Cheese</label>
+                        <br>
+                        <input type="radio" id="sour cream" name="flavor">
+                        <label for="sour cream">Sour Cream</label>
+                    </div>
+                </div>
+            </div>
+            <div class="caption no-border-top"></div>
+            <div class="order-input inp-grid">
+                <div>
+                    <img class="img" src="imgs/drinks.png" style="width: 100px; height:auto;">
+                    <div>
+                        <label for="drinks-quantity">Quantity</label>
+                        <input style="width:30px; margin-right: 25px;" type="number" name="drinks-quantity" id="drinks-quantity" value="0" min="0" max="50">
+                    </div>
+                </div>
+                <div class="order-input-content">
+                    <div class="rdio">
+                        <label>Size</label>
+                        <br>
+                        <input type="radio" id="drink-small" name="drink-size">
+                        <label for="drink-small">Small</label>
+                        <br>
+                        <input type="radio" id="drink-medium" name="drink-size">
+                        <label for="drink-medium">Medium</label>
+                        <br>
+                        <input type="radio" id="drink-large" name="drink-size">
+                        <label for="drink-large">Large</label>
+                    </div>
+                    <div>
+                        <label>Drinks</label>
+                        <!-- bbq, cheese, sour cream -->
+                        <br>
+                        <input type="radio" id="coke" name="drink">
+                        <label for="coke">Coca Cola</label>
+                        <br>
+                        <input type="radio" id="sprite" name="drink">
+                        <label for="sprite">Sprite</label>
+                        <br>
+                        <input type="radio" id="royal" name="drink">
+                        <label for="royal">Royal</label>
+                    </div>
+                </div>
+            </div>
+            <div class="caption no-border-top"></div>
+            <div class="feedback">
+                <label for="t-feedback">Feedback</label>
+                <textarea id="t-feedback" rows="5" cols="50" placeholder="feedback"></textarea>
+            </div>
+            <div class="choose-delivery">
+                <input type="radio" id="pickup" name="delivery-type">
+                <label for="pickup">Pickup <img src="imgs/pick-up.png" style="width:40px;height:auto;"></label>
+                <input type="radio" id="delivery" name="delivery-type">
+                <label for="delivery">Delivery <img src="imgs/delivery.png" style="width:40px;height:auto;"></label>
+            </div>
+            <div class="buttons">
+                <button class="submit-button" type="submit">Checkout</button>
+                <button class="submit-button" type="reset"><img src="imgs/reset.svg" style="width: 20px; height: auto;"></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
